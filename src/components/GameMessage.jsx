@@ -1,7 +1,10 @@
-function GameMessage() {
+function GameMessage({ message, onClose }) {
+    if (!message) return null
+    
     return (
         <div>
-            <p>Game Message</p>
+            <p>{message === 'gameover' ? '💀 Game Over!' : '🎉 Level Up!'}</p>
+            <button onClick={onClose}>Continue</button>
         </div>
     )
 }
