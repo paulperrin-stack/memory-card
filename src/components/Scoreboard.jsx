@@ -1,9 +1,11 @@
+import '../styles/Scoreboard.css'
+
 function Scoreboard({ currentScore, bestScore, level }) {
     return (
-        <div>
-            <p>Level: {level + 1}</p>
-            <p>Score: {currentScore}</p>
-            <p>Best: {bestScore}</p>
+        <div className="scoreboard">
+            <p>Level: <span>{level + 1}</span></p>
+            <p>Score: <span>{currentScore}</span></p>
+            <p>Best: <span>{bestScore}</span></p>
         </div>
     )
 }

@@ -1,6 +1,8 @@
+import '../styles/Card.css'
+
 function Card({ pokemon, onCardClick }) {
     return (
-        <div onClick={() => onCardClick(pokemon.id)}>
+        <div className="card" onClick={() => onCardClick(pokemon.id)}>
             <img src={pokemon.image} alt={pokemon.name} />
             <p>{pokemon.name}</p>
         </div>

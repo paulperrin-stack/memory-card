@@ -1,0 +1,20 @@
+.scoreboard {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 12px;
+    padding: 1rem 2rem;
+    margin-bottom: 1rem;
+}
+
+.scoreboard p {
+    font-size: 15px;
+    color: #111;
+}
+
+.scoreboard span {
+    font-weight: 500;
+    color: #111;
+}
